@@ -2,13 +2,13 @@
 %global rlibdir  %{_datadir}/R/library
 
 Name:             R-%{packname}
-Version:          0.1_6.1
-Release:          2
+Version:          0.2.2
+Release:          1
 Summary:          Data sets for econometrics
 Group:            Sciences/Mathematics
 License:          GPL (>= 2)
 URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
-Source0:          http://cran.r-project.org/src/contrib/%{packname}_0.1-6.1.tar.gz
+Source0:          http://cran.r-project.org/src/contrib/Ecdat_0.2-2.tar.gz
 BuildArch:        noarch
 Requires:         R-core
 Requires:         R-car R-systemfit R-sem R-lmtest R-sandwich 
@@ -41,3 +41,7 @@ rm -f %{buildroot}%{rlibdir}/R.css
 %{rlibdir}/%{packname}/Meta
 %{rlibdir}/%{packname}/data
 %{rlibdir}/%{packname}/help
+%{rlibdir}/%{packname}/R
+%{rlibdir}/%{packname}/demoFiles
+%{rlibdir}/%{packname}/scripts
+
